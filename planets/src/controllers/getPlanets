@@ -1,0 +1,6 @@
+const valor = require("../data")
+
+module.exports = (req, res) => {
+    const planet = valor.list()
+    res.status(200).json(planet)
+}

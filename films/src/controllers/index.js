@@ -1,3 +1,5 @@
+const catchedAsync = require("../utils/catchedAsync")
+
 module.exports = {
-    getFilms: require("./getFilm")
+    getFilms: catchedAsync(require("./getFilm"))
 }

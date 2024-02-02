@@ -1,8 +1,8 @@
-class filmError extends Error {
+class planetError extends Error {
     constructor(message, statusCode) {
         super(message),
         this.statusCode = statusCode
     }
 }
 
-module.exports = filmError
+module.exports = planetError

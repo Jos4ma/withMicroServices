@@ -1,3 +1,3 @@
 module.exports = {
-    filmError: require("./error.js")
+    planetError: require("./error.js")
 }

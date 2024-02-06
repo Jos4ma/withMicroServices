@@ -8,7 +8,8 @@ app.use(morgan("dev"))
 app.use(
     "/characters",
     createProxyMiddleware({
-        target: "http://characters:8001",
+        //target: "http://characters:8001",
+        target: "http://localhost:8001",
         changeOrigin: true,
     })
 )

@@ -8,6 +8,10 @@ module.exports = {
         return valor.data
         //return characters
     },
+    listOne: async (hola) => {
+        var valor = await axios.get(`http://localhost:8004/Character/${hola}`)
+        return valor.data
+    },
     create: () => {
         throw Error("Error al crear el personaje")
     }

@@ -16,14 +16,14 @@ app.use(
 app.use(
     "/planets",
     createProxyMiddleware({
-        target: "http://planets:8003",
+        target: "http://localhost:8003",
         changeOrigin: true,
     })
 )
 app.use(
     "/films",
     createProxyMiddleware({
-        target: "http://films:8002",
+        target: "http://localhost:8002",
         changeOrigin: true,
     })
 )

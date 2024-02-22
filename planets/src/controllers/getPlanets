@@ -1,6 +1,6 @@
 const valor = require("../data")
 
-module.exports = (req, res) => {
-    const planet = valor.list()
+module.exports = async (req, res) => {
+    const planet = await valor.list()
     res.status(200).json(planet)
 }

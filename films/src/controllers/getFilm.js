@@ -1,8 +1,9 @@
 const films = require("../data")
 
 module.exports = async (req, res) => {
-    var perro = await films.list()
-    console.log(perro)
+    var {_id} = req.params
+    if (!_id)   var film = await films.list()
     //throw Error("se fue a la mierda")
-    res.status(200).json(perro)
+    else    var film = await films.listOne(_id)
+    res.status(200).json(film)
 }
